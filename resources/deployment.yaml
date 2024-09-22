@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: anhtq/harness-example:${{imageTag}}
+        image: <+artifact.image>
         ports:
         - containerPort: 80
 ---
