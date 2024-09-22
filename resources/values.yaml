@@ -1,0 +1,15 @@
+replicaCount: 3
+
+image:
+  repository: anhtq/harness-tutorial
+  tag: <+pipeline.sequenceId>
+  pullPolicy: IfNotPresent
+
+service:
+  enabled: true
+  name: custom-nginx-service
+  type: LoadBalancer
+  port: 80
+  targetPort: 80
+
+resources: {}
