@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: anhtq/harness-tutorial
+  repository: quyenlc/harness-turtorial
   tag: <+pipeline.sequenceId>
   pullPolicy: IfNotPresent
 
